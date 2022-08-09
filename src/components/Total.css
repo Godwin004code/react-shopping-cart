@@ -70,13 +70,16 @@ th,td {
         width: 90%;
         height: 85vh;
     }
+    .cancel {
+        right: 12;
+    }
 }
 
 .cancel {
     font-weight: 900;
     font-size: 20px;
     position: absolute;
-    right: 12%;
+    right: 25%;
     cursor: pointer;
 }
 
