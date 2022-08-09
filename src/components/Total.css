@@ -5,6 +5,7 @@
     position: absolute;
     top: 0%;
     left: 0;
+    z-index: 20;
 }
 
 .receipt {
@@ -13,6 +14,9 @@
     height: 90%;
     margin: 1rem auto;
     overflow-y: auto;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 20;
 }
 
 table {
@@ -27,8 +31,55 @@ tr,th, td {
 th,td {
     padding: 12px 0;
 }
+.option {
+    display: flex;
+    margin: 1rem 0;
+    width: 50%;
+    justify-content: space-between;
+}
+.remove {
+    padding: 10px;
+    width: 50%;
+
+}
+.option button {
+    padding: 10px;
+    
+}
+.option h2 {
+    font-size: 20px;
+}
+.item {
+    border-top: 1px dashed #ccc;
+    padding: 1.2rem 0;
+}
+.item-tab {
+    display: flex;
+}
+.item-tab-img {
+    width: 30%;
+    margin-right: 15px;
+}
+.item-tab-img img {
+    width: 100%;
+    border-radius: 6px;
+
+}
 @media only screen and (max-width: 768px) {
     .receipt {
         width: 90%;
+        height: 85vh;
     }
+}
+
+.cancel {
+    font-weight: 900;
+    font-size: 20px;
+    position: absolute;
+    right: 12%;
+    cursor: pointer;
+}
+
+.total {
+    margin: 1rem 0;
 }

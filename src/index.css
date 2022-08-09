@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -8,24 +10,28 @@
 body {
     width: 100%;
     overflow-x: hidden;
+    font-family: 'Catamaran', sans-serif;
 }
 
-header, a {
-    background-color: blue;
-    padding: 10px 20px;
+.price-item {
+    margin: 1rem 0;
+}
+
+header {
+    background-color: #360A3B;
+    padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     color: white;
+    position: fixed;
+    top: 0;
 }
-
-
-
-
 
 nav li {
     list-style-type: none;
     font-size: 20px;
+    cursor: pointer;
 }
 .cart {
     width: 90%;
@@ -38,7 +44,10 @@ nav li {
 
 .cart-container {
     width: 30%;
-    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+.cart-container:last-child {
+    margin-bottom: 3rem;
 }
 
 
@@ -54,6 +63,14 @@ nav li {
 body.remove-scrollbar {
     overflow: hidden;
 }
+button {
+    background-color: #360A3B;
+    color: white;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 0;
+}
+
 
 @media only screen and (max-width: 768px) {
     .cart {
