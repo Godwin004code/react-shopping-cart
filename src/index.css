@@ -19,17 +19,47 @@ header, a {
     color: white;
 }
 
-nav {
-    width: 20%;
-}
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-}
+
+
 
 nav li {
     list-style-type: none;
     font-size: 20px;
 }
+.cart {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
 
+.cart-container {
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+
+.cart-container img {
+    width: 100%;
+}
+.cart-container button {
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    border-radius: 6px;
+}
+body.remove-scrollbar {
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    .cart {
+        flex-direction: column;
+    }
+    .cart-container {
+        width: 100%;
+    }
+}

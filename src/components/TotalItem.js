@@ -3,7 +3,7 @@ import React from 'react'
 import './Total.css'
 import { useCart } from 'react-use-cart'
 
-const TotalItem = ({show, setShow}) => {
+const TotalItem = ({show, setShow, handleHide}) => {
   const {items, totalItems, totalUniqueItems, cartTotal, removeItem,updateItemQuantity, emptyCart, isEmpty} = useCart()
 
   if (totalUniqueItems === 0) setShow(false)
@@ -11,6 +11,7 @@ const TotalItem = ({show, setShow}) => {
     <div>
       {show ? <div className='receipt-container'>
         <div className='receipt'>
+          <div onClick={handleHide}>X</div>
           <div>
             <h2>Total Price: &#8358; {cartTotal}</h2>
             <h2>Quantity: {totalUniqueItems}</h2>
@@ -18,7 +19,7 @@ const TotalItem = ({show, setShow}) => {
               {items.map((item, index) => {
                 return (
                   
-               <div>
+               <div key={item.id}>
                 <h2>{item.title}</h2>
                 <h2>{item.price}</h2>
                 <div>

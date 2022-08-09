@@ -27,3 +27,8 @@ tr,th, td {
 th,td {
     padding: 12px 0;
 }
+@media only screen and (max-width: 768px) {
+    .receipt {
+        width: 90%;
+    }
+}

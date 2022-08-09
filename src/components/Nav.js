@@ -12,9 +12,7 @@ const Nav = ({handleShow}) => {
         <h2>Tioya Jumia</h2>
         <nav>
             <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
+               
                 <li onClick={handleShow}>
                     <Badge badgeContent={totalItems} color='secondary'>
                         <FaShoppingCart />
