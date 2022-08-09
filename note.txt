@@ -1,0 +1,37 @@
+
+import React from 'react'
+import { useCart } from 'react-use-cart'
+
+const Cart = () => {
+    const {items, totalItems, totalUniqueItems, cartTotal, removeItem,updateItemQuantity, emptyCart, isEmpty} = useCart()
+
+    if(isEmpty) return <h2>Your cart is empty</h2>
+
+  return (
+    <div>
+        <h2>Cart: {totalUniqueItems} total Item: {totalItems}</h2>
+        <table>
+            <tbody>
+            {
+                items.map((item, index) => (
+                    <tr key={index}>
+                        <td>{item.title}</td>
+                        <td>{item.price}</td>
+                        <td>Quantity: {item.quantity}</td>
+                        <td>
+                            <button onClick={() => updateItemQuantity(item.id, item.quantity - 1)}>-</button>
+                            <button onClick={() => updateItemQuantity(item.id, item.quantity + 1)}>+</button>
+                            <button onClick={() => removeItem(item.id)}>removeItem</button>
+                        </td>
+                    </tr>
+                ))
+            }
+            <div>Total Price: {cartTotal}</div>
+            <div onClick={() => emptyCart()}>Clear cart</div>
+            </tbody>
+        </table>
+    </div>
+  )
+}
+
+export default Cart
