@@ -6,7 +6,6 @@ import { useCart } from 'react-use-cart'
 const TotalItem = ({show, setShow, handleHide}) => {
   const {items, totalItems, totalUniqueItems, cartTotal, removeItem,updateItemQuantity, emptyCart, isEmpty} = useCart()
 
-  if (totalUniqueItems === 0) setShow(false)
   return (
     <div>
       {show ? <div className='receipt-container'>

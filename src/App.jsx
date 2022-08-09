@@ -6,19 +6,21 @@ import Home from "./components/Home"
 import Nav from "./components/Nav"
 import { useState } from "react"
 import {useCart} from "react-use-cart"
-
+import Swal from 'sweetalert2'
 //import './index.css'
 
 const App = () => {
-  const {totalUniqueItems} = useCart()
+  const {isEmpty} = useCart()
   const [show, setShow] = useState(false)
 
   const handleShow = () => {
+    
     document.documentElement.scrollTop = 0;
-      document.body.classList.add("remove-scrollbar");
+    document.body.classList.add("remove-scrollbar");
     setShow(true)
   }
   const handleHide = () => {
+    
     document.documentElement.scrollTop = 0;
       document.body.classList.remove("remove-scrollbar");
     setShow(false)
