@@ -46,6 +46,10 @@ nav li {
     width: 30%;
     margin-top: 3rem;
 }
+.cart-container:first-child {
+    margin-top: 4rem;
+}
+
 .cart-container:last-child {
     margin-bottom: 3rem;
 }

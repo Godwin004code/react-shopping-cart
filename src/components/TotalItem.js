@@ -25,7 +25,7 @@ const TotalItem = ({show, setShow, handleHide}) => {
                   <div className='item-tab-img'>
                     <img src={item.img} alt={item.title} />
                   </div>
-                  <div>
+                  <div className='item-title'>
                   <h2>{item.title}</h2>
                 <h2>&#8358; {item.price}</h2>
                   </div>
