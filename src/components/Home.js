@@ -31,7 +31,6 @@ const Home = ({show, setShow, handleHide}) => {
   }
   return (
     <div style={{marginTop: '5rem'}}>
-      
         <Items filtered={filtered} />
         <TotalItem show={show} setShow={setShow} handleHide={handleHide} />
     </div>

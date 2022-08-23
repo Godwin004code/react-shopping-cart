@@ -24,6 +24,7 @@
     z-index: 20;
     display: none;
     transition: all ease-in 300ms;
+    margin-top: 2rem;
 }
 .receipt::-webkit-scrollbar {
     width: 6px;
