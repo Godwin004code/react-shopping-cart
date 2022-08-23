@@ -85,6 +85,8 @@ th,td {
 @media only screen and (max-width: 768px) {
     .receipt {
         width: 90%;
+        height: 85;
+        margin: 1.5rem 0;
     }
     .cancel {
         right: 12;
