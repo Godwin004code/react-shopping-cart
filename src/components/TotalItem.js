@@ -8,7 +8,7 @@ const TotalItem = ({show, setShow, handleHide}) => {
 
   return (
     <div>
-      {show ? <div className='receipt-container'>
+      {<div className={show ? 'receipt-container active' : 'receipt-container'}>
         <div className='receipt'>
           <div onClick={handleHide} className='cancel'>
            X
@@ -42,7 +42,7 @@ const TotalItem = ({show, setShow, handleHide}) => {
               
             </div>
         </div>
-      </div> : ''}
+      </div>}
     </div>
   )
 }

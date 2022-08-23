@@ -11,6 +11,7 @@ const App = () => {
   const { isEmpty } = useCart();
   const [show, setShow] = useState(false);
 
+
   const handleShow = () => {
     document.documentElement.scrollTop = 0;
     document.body.classList.add("remove-scrollbar");

@@ -1,22 +1,37 @@
 .receipt-container {
     width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.25);
-    position: absolute;
-    top: 0%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    bottom: 0%;
     left: 0;
     z-index: 20;
+    border-radius: 14px 14px 0 0;
+    transition: all ease-in 300ms;
+}
+.receipt-container.active {
+    height: 100vh;
+    transition: all ease-in 300ms;
 }
 
 .receipt {
     background-color: white;
     width: 60%;
-    height: 90%;
+    height: 100%;
     margin: 1rem auto;
     overflow-y: auto;
     padding: 20px;
-    border-radius: 10px;
     z-index: 20;
+    display: none;
+    transition: all ease-in 300ms;
+}
+.receipt::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f8bcff;
+}
+.receipt-container.active .receipt {
+    display: block;
+    transition: all ease-in 300ms;
 }
 
 table {
@@ -65,6 +80,7 @@ th,td {
     border-radius: 6px;
 
 }
+
 @media only screen and (max-width: 768px) {
     .receipt {
         width: 90%;
@@ -79,7 +95,7 @@ th,td {
     font-weight: 900;
     font-size: 20px;
     position: absolute;
-    right: 25%;
+    right: 12%;
     cursor: pointer;
 }
 

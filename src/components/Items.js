@@ -1,13 +1,13 @@
 
 
 import React from 'react'
-import { data } from './data'
+
 import { useCart } from 'react-use-cart'
 import Swal from "sweetalert2"
 
 
 
-const Items = () => {
+const Items = ({ filtered}) => {
     const {addItem} = useCart()
     const added = (item) => {
         Swal.fire({
@@ -17,7 +17,7 @@ const Items = () => {
     }
   return (
     <section className='cart'>
-        {data.map((item) => (
+        {filtered.map((item) => (
             <div className='cart-container' key={item.id}>
                 <div>
                     <img src={item.img} alt={item.title} />
