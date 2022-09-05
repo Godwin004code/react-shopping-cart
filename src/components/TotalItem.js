@@ -23,7 +23,7 @@ const TotalItem = ({show, setShow, handleHide}) => {
                <div key={item.id} className='item'>
                 <div className='item-tab'>
                   <div className='item-tab-img'>
-                    <img src={item.img} alt={item.title} />
+                    <img src={"https://protected-journey-89988.herokuapp.com" + item.img} alt={item.title} />
                   </div>
                   <div className='item-title'>
                   <h2>{item.title}</h2>

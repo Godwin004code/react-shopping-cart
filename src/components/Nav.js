@@ -8,7 +8,7 @@ import {useCart} from "react-use-cart"
 const Nav = ({handleShow}) => {
     const {totalItems} = useCart()
   return (
-    <header>
+    <header className='hidden'>
         <h2>Tioya Jumia</h2>
         <nav>
             <ul>

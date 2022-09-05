@@ -1,6 +1,6 @@
 .receipt-container {
     width: 100%;
-    height: 10vh;
+    height: 0vh;
     background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     bottom: 0%;
@@ -56,7 +56,6 @@ th,td {
 .remove {
     padding: 10px;
     width: 50%;
-
 }
 .option button {
     padding: 10px;
@@ -93,7 +92,7 @@ th,td {
         margin: 2rem auto;
     }
     .cancel {
-        right: 12;
+        right: 5%;
     }
 }
 
@@ -101,7 +100,8 @@ th,td {
     font-weight: 900;
     font-size: 20px;
     position: absolute;
-    right: 12%;
+    right: 25%;
+    top: 10%;
     cursor: pointer;
 }
 
